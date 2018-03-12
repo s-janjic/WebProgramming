@@ -5,6 +5,7 @@
         <title>Korisnici koji su registrovali vozila</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     
     <body>
@@ -13,7 +14,8 @@
         <p>Na ovoj stranici prikazani su korisnici koji su registrovali svoja vozila.</p>
 
         <!-- tabela -->
-        <table border="1">
+        <div class="table-responsive" style="width: 300px">
+        <table class="table table-bordered">
             <tr bgcolor="#858687" class="plavo zaglavlje"> 
                 <th>Ime</th>
                 <th>Prezime</th>
@@ -44,6 +46,7 @@
                 <td>654321</td>
             </tr>
         </table>
+        </div>
 
     </body>
 </html>

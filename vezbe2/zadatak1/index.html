@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>
             Registracija
@@ -7,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
     </head>
     
     <body>
@@ -20,27 +23,28 @@
         </p>
         
         <!-- tabela i forma -->
+        <div class="table-responsive" style="width: 400px">
         <form action="register.html">
-            <table border="1">
+            <table class="table table-bordered">
                 <th class="plavo zaglavlje" bgcolor="#858687" colspan="2">
                     Produzenje registracije
                 </th>
             
                 <tr class="neparni">
                     <td>Ime:</td>
-                    <td><input type="text"></td>
+                    <td><input class="form-control" type="text"></td>
                 </tr>
             
                 <tr class="parni">
                     <td>Prezime:</td>
-                    <td><input type="text" id="prz"></td>
+                    <td><input class="form-control" type="text" id="prz"></td>
                 </tr>
             
                 <tr class="neparni">
                     <td>JMBG*:</td>
                         <td>
                         <form>
-                            <input type="text" placeholder="JBMG" required />
+                            <input class="form-control" type="text" placeholder="JBMG" required />
                         </form>
                     </td>
                 </tr>
@@ -54,40 +58,41 @@
                             <option value="Peugeot">
                             <option value="Renault">
                         </datalist>
-                        <input type="text" list="automobili">
+                        <input class="form-control" type="text" list="automobili">
                     </td>
                 </tr>
 
                 <tr class="neparni">
                     <td>Tip vozila:</td>
-                    <td><input type="text"></td>
+                    <td><input class="form-control" type="text"></td>
                 </tr>
                 
                 <tr class="parni">
                     <td>Registarska oznaka:</td>
-                    <td><input type="text"></td>
+                    <td><input class="form-control" type="text"></td>
                 </tr>
                 
                 <!-- odabir boje -->
                 <tr class="neparni">
                     <td>Odaberi boju:</td>
                     <td>
-                        <input name="Izaberi boju" type="color">
+                        <input class="form-control" name="Izaberi boju" type="color">
                     </td>
                 </tr>
 
                 <tr class="parni">
                     <td>Datum prethodne registracije:</td>
-                    <td><input type="date"></td>
+                    <td><input class="form-control" type="date"></td>
                 </tr>
 
                 <tr class="neparni">
                     <td colspan="2" align="center">
-                            <input type="submit" value="Posalji">
+                            <input class="btn btn-primary" type="submit" value="Posalji">
                     </td>
                 </tr>
             </table>
         </form>
+        </div>
         
         <!-- bottom tekst -->
         <p>
