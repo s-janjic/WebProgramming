@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            Registracija
+        </title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <h3 style="color: #1853b3">
+            Produzenje registracije
+        </h3>
+        
+        <p>
+            Na ovoj stranici mozete obaviti produzenje registracije Vaseg
+            automobila. Molimo Vas da popunite sledeci format:
+        </p>
+        
+        <!-- tabela i forma -->
+        <form action="register.html">
+            <table border="1">
+                <th style="color: #1b53ad" bgcolor="#858687" colspan="2">
+                    Produzenje registracije
+                </th>
+            
+                <tr bgcolor="#858687">
+                    <td>Ime:</td>
+                    <td><input type="text"></td>
+                </tr>
+            
+                <tr bgcolor="#cccdce">
+                    <td>Prezime:</td>
+                    <td><input type="text" id="prz"></td>
+                </tr>
+            
+                <tr bgcolor="#858687">
+                    <td>JMBG*:</td>
+                        <td>
+                        <form>
+                            <input type="text" placeholder="JBMG" required />
+                        </form>
+                    </td>
+                </tr>
+                
+                <tr bgcolor="#cccdce">
+                    <td>Marka vozila:</td>
+                    <td>
+                        <!-- autocomplete lista -->
+                        <datalist id="automobili">
+                            <option value="Mercedes">
+                            <option value="Peugeot">
+                            <option value="Renault">
+                        </datalist>
+                        <input type="text" list="automobili">
+                    </td>
+                </tr>
+
+                <tr bgcolor="#858687">
+                    <td>Tip vozila:</td>
+                    <td><input type="text"></td>
+                </tr>
+                
+                <tr bgcolor="#cccdce">
+                    <td>Registarska oznaka:</td>
+                    <td><input type="text"></td>
+                </tr>
+                
+                <!-- odabir boje -->
+                <tr bgcolor="#cccdce">
+                    <td>Odaberi boju:</td>
+                    <td>
+                        <input name="Izaberi boju" type="color">
+                    </td>
+                </tr>
+
+                <tr bgcolor="#858687">
+                    <td>Datum prethodne registracije:</td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr bgcolor="#858687">
+                    <td colspan="2" align="center">
+                            <input type="submit" value="Posalji">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <!-- bottom tekst -->
+        <p>
+            U gornjem combo box-u kao stavke nalaze se sledece vrednosti:
+            <i>Mercedes, Peugeot i Renault</i>    
+        </p>
+
+        <!-- kad se ucita stranica, kursor(focus) odma je u prezimenu polja -->
+        <script type="text/javascript">
+            document.getElementById('prz').focus()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+.tekst {
+    color: red;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.prva {
+    border: 2px solid;
+    padding: 15px;
+    border-color: red;
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 220px;
+    border: 2px solid;
+    padding: 7px;
+    border-color: red;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.img-with-text img:hover {
+    border: 1px solid;
+    border-color: red;
+}
+
+.uvecana {
+    width: 100%;
+}
+
+.levo-70 {
+    width: 70%;
+    border: 1px solid;
+    border-color: red;
+    padding: 10px;
+}

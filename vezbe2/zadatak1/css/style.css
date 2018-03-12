@@ -1,0 +1,30 @@
+.plavo {
+    color: rgb(21, 21, 192);
+}
+
+.naslov {
+    font-size: 16px;
+}
+
+.zaglavlje {
+    font-size: 14px;
+}
+
+p {
+    font-family: Tahoma;
+    font-size: 10px;
+}
+
+table {
+    background: rgb(88, 88, 88);
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.neparni {
+    background: rgb(88, 88, 88);
+}
+
+.parni {
+    background: rgb(51, 50, 50);
+}
